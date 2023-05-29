@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/Рисунок1.png</file>
+        <file>img/Рисунок2.png</file>
+        <file>img/Рисунок3.png</file>
+        <file>img/блок цилиндров.png</file>
+        <file>img/term56_001_b.jpg</file>
+        <file>img/Рисунок4.png</file>
+        <file>img/передняя ось.png</file>
+        <file>img/Рисунок5.png</file>
+    </qresource>
+</RCC>
