@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>967</width>
+    <height>544</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(192, 192, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Display">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>421</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128, 0, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Желаемое количество вершин:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="LinksTable">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>591</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>calibri</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #dedede;
+border: solid 2px #94fa7f;
+border-radius: 3px;
+font-family: calibri;
+font-size: 20px;
+color:#3d3d3d;
+font-weight: bold;
+Alignment: center;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Create">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Таблица</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="City">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>0</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #dedede;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Accept_2">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>129</y>
+      <width>159</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Удалить вершину</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Accept">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>66</y>
+      <width>169</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Добавить вершину</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Answer">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>381</y>
+      <width>219</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Метод ветвей и границ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Visual">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>0</y>
+      <width>171</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Показать</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Fon">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>2</y>
+      <width>971</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Users/Полина/Pictures/Saved Pictures/0f7b88f6743955daa2ed6e6c31a91b3c.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="depth">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>255</y>
+      <width>159</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Обход в глубину</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="width">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>318</y>
+      <width>149</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Обход в ширину</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Deikstra">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>192</y>
+      <width>179</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(128,0,255);</string>
+    </property>
+    <property name="text">
+     <string>Алгоритм Дейкстры</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>490</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cascadia Mono</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Выход</string>
+    </property>
+   </widget>
+   <zorder>Fon</zorder>
+   <zorder>LinksTable</zorder>
+   <zorder>Create</zorder>
+   <zorder>City</zorder>
+   <zorder>Accept_2</zorder>
+   <zorder>Accept</zorder>
+   <zorder>Answer</zorder>
+   <zorder>Visual</zorder>
+   <zorder>Display</zorder>
+   <zorder>depth</zorder>
+   <zorder>width</zorder>
+   <zorder>Deikstra</zorder>
+   <zorder>pushButton</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
